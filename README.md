@@ -1,35 +1,20 @@
-# Make sure you're inside your Rstudy folder
-cd ~/Desktop/Rstudy
-
-# Create .gitignore file
-cat <<EOF > .gitignore
-.Rhistory
-.RData
-.Rproj.user/
-.DS_Store
-EOF
-
-# Create README.md file
-cat <<'EOF' > README.md
-# 📘 Rstudy – Machine Learning Projects in R
-
 ### 🧠 Overview
 This repository contains a collection of machine learning projects implemented in **R**.  
 Each project explores a different algorithm — from regression to deep learning — with hands-on examples and datasets.
 
 ---
 
-## 🗂️ Project Index
+## Project Index
 
 | # | Project | Topic | Dataset | Core Libraries |
-|---|----------|--------|----------|----------------|
-| 1 | [**Linear Regression Study**](#1-linear-regression-study-project) | Regression | Kaggle – Bike Sharing Demand | `tidyverse`, `ggplot2`, `caret` |
-| 2 | [**Logistic Regression Study**](#2-logistic-regression-study-project) | Classification | UCI Adult Income | `tidyverse`, `caret`, `ggplot2` |
-| 3 | [**K-Nearest Neighbors (KNN) Study**](#3-k-nearest-neighbors-study-project) | Classification | Demo Dataset | `class`, `caret`, `tidyverse` |
-| 4 | [**Decision Trees & Random Forests Study**](#4-decision-trees--random-forests-study-project) | Classification | ISLR – College Data | `rpart`, `randomForest`, `ISLR` |
-| 5 | [**Support Vector Machines (SVM) Study**](#5-support-vector-machines-study-project) | Classification | Lending Club Loans | `e1071`, `caret`, `ggplot2` |
-| 6 | [**K-Means Clustering Study**](#6-k-means-clustering-study-project) | Unsupervised Learning | UCI Wine Quality | `cluster`, `factoextra`, `ggplot2` |
-| 7 | [**Neural Networks Study**](#7-neural-networks-study-project) | Deep Learning | UCI Banknote Authentication | `neuralnet`, `caret`, `tidyverse` |
+|---|---------|-------|---------|----------------|
+| 1 | Linear Regression Study | Regression | Kaggle – Bike Sharing Demand | `tidyverse`, `ggplot2`, `caret` |
+| 2 | Logistic Regression Study | Classification | UCI Adult Income | `tidyverse`, `caret`, `ggplot2` |
+| 3 | K-Nearest Neighbors (KNN) Study | Classification | Demo Dataset | `class`, `caret`, `tidyverse` |
+| 4 | Decision Trees & Random Forests Study | Classification | ISLR – College Data | `rpart`, `randomForest`, `ISLR` |
+| 5 | Support Vector Machines (SVM) Study | Classification | Lending Club Loans | `e1071`, `caret`, `ggplot2` |
+| 6 | K-Means Clustering Study | Unsupervised Learning | UCI Wine Quality | `cluster`, `factoextra`, `ggplot2` |
+| 7 | Neural Networks Study | Deep Learning | UCI Banknote Authentication | `neuralnet`, `caret`, `tidyverse` |
 
 ---
 
