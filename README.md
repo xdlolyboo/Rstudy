@@ -1,56 +1,150 @@
-### 🧠 Overview
-This repository contains a collection of machine learning projects implemented in **R**.  
-Each project explores a different algorithm — from regression to deep learning — with hands-on examples and datasets.
+# DataStudy - Machine Learning Projects in R and Python
+
+A comprehensive collection of machine learning study projects implemented in both R and Python. Each project explores a fundamental algorithm with hands-on examples, real-world datasets, and thorough documentation.
+
+---
+
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Repository Structure](#repository-structure)
+3. [Tech Stack](#tech-stack)
+4. [Project Index](#project-index)
+5. [Installation](#installation)
+6. [Usage](#usage)
+7. [License](#license)
+
+---
+
+## Overview
+
+This repository contains seven machine learning projects covering supervised learning, unsupervised learning, and neural networks. Each project is implemented in both R and Python, allowing learners to compare approaches across languages.
+
+**Key Features:**
+- Parallel implementations in R and Python
+- Real-world datasets included with each project
+- Well-commented code following language-specific style guides
+- Comprehensive exploratory data analysis and visualizations
+
+---
+
+## Repository Structure
+
+```
+DataStudy/
+├── README.md              # This file
+├── Rstudy/                # R implementations
+│   ├── README.md
+│   ├── Linear-Regression-Study-Project/
+│   ├── Logistic-Regression-Study-Project/
+│   ├── K-Nearest-Neighbors-Study-Project/
+│   ├── Decision-Trees-Random-Forests-Study-Project/
+│   ├── Support-Vector-Machines-Study-Project/
+│   ├── K-Means-Clustering-Study-Project/
+│   └── Neural-Networks-Study-Project/
+└── Pystudy/               # Python implementations
+    ├── README.md
+    ├── Linear-Regression-Study-Project/
+    ├── Logistic-Regression-Study-Project/
+    ├── K-Nearest-Neighbors-Study-Project/
+    ├── Decision-Trees-Random-Forests-Study-Project/
+    ├── Support-Vector-Machines-Study-Project/
+    ├── K-Means-Clustering-Study-Project/
+    ├── Neural-Networks-Study-Project/
+```
+
+---
+
+## Tech Stack
+
+### R Implementation (Rstudy)
+
+| Category | Tools |
+|----------|-------|
+| Language | R (version 4.0+) |
+| Data Manipulation | dplyr, tidyr |
+| Visualization | ggplot2 |
+| Machine Learning | caret, rpart, randomForest, e1071, neuralnet, class |
+
+### Python Implementation (Pystudy)
+
+| Category | Tools |
+|----------|-------|
+| Language | Python (version 3.8+) |
+| Data Manipulation | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn |
+| Machine Learning | Scikit-Learn |
 
 ---
 
 ## Project Index
 
-| # | Project | Topic | Dataset | Core Libraries |
-|---|---------|-------|---------|----------------|
-| 1 | Linear Regression Study | Regression | Kaggle – Bike Sharing Demand | `tidyverse`, `ggplot2`, `caret` |
-| 2 | Logistic Regression Study | Classification | UCI Adult Income | `tidyverse`, `caret`, `ggplot2` |
-| 3 | K-Nearest Neighbors (KNN) Study | Classification | Demo Dataset | `class`, `caret`, `tidyverse` |
-| 4 | Decision Trees & Random Forests Study | Classification | ISLR – College Data | `rpart`, `randomForest`, `ISLR` |
-| 5 | Support Vector Machines (SVM) Study | Classification | Lending Club Loans | `e1071`, `caret`, `ggplot2` |
-| 6 | K-Means Clustering Study | Unsupervised Learning | UCI Wine Quality | `cluster`, `factoextra`, `ggplot2` |
-| 7 | Neural Networks Study | Deep Learning | UCI Banknote Authentication | `neuralnet`, `caret`, `tidyverse` |
+| Project | Algorithm Type | Dataset |
+|---------|---------------|---------|
+| Linear Regression | Regression | Kaggle Bike Sharing Demand |
+| Logistic Regression | Binary Classification | UCI Adult Income |
+| K-Nearest Neighbors | Classification | Iris Dataset |
+| Decision Trees and Random Forests | Ensemble Classification | ISLR College |
+| Support Vector Machines | Classification | Lending Club Loans |
+| K-Means Clustering | Unsupervised Learning | UCI Wine Quality |
+| Neural Networks | Deep Learning | UCI Banknote Authentication |
 
 ---
 
-## 🧩 Project Summaries
+## Installation
 
-### 1️⃣ Linear Regression Study Project
-Predicts **bike rental demand** using linear regression on Kaggle’s dataset.  
-Focuses on exploratory analysis and model limitations with nonlinear data.
+### R Setup
 
-### 2️⃣ Logistic Regression Study Project
-Classifies individuals as earning **≤50K or >50K USD** using the UCI Adult dataset.  
-Emphasizes **data cleaning**, encoding, and interpretability.
+1. Install R (version 4.0+) and RStudio
+2. Install required packages:
 
-### 3️⃣ K-Nearest Neighbors (KNN) Study Project
-Implements a **KNN classifier** to demonstrate distance-based learning and the effect of `k` on performance.
+```r
+install.packages(c(
+  "ggplot2", "dplyr", "caTools", "Amelia", "ISLR",
+  "class", "rpart", "rpart.plot", "randomForest",
+  "e1071", "cluster", "neuralnet", "MASS"
+))
+```
 
-### 4️⃣ Decision Trees & Random Forests Study Project
-Classifies colleges as **Private vs. Public** using tree-based models.  
-Shows how Random Forests improve generalization.
+### Python Setup
 
-### 5️⃣ Support Vector Machines (SVM) Study Project
-Predicts **loan repayment** using Lending Club data (2007–2010).  
-Compares linear and nonlinear kernels for financial risk modeling.
+1. Install Python (version 3.8+)
+2. Install required packages:
 
-### 6️⃣ K-Means Clustering Study Project
-Clusters **red and white wines** from the UCI dataset.  
-Validates clustering quality against actual labels.
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
 
-### 7️⃣ Neural Networks Study Project
-Trains a **Neural Network** to detect forged banknotes.  
-Highlights nonlinear modeling strength and superior accuracy.
+### Clone the Repository
+
+```bash
+git clone https://github.com/xdlolyboo/Rstudy.git
+cd Rstudy
+```
 
 ---
 
-## 🧰 Tech Stack
-- **Language:** R  
-- **Libraries:** `tidyverse`, `caret`, `ggplot2`, `ISLR`, `rpart`, `randomForest`, `e1071`, `neuralnet`, `cluster`, `factoextra`
-- **Tools:** RStudio, Git, GitHub  
+## Usage
 
+### Running R Scripts
+
+```r
+setwd("~/DataStudy/Rstudy/Linear-Regression-Study-Project")
+source("Linear_Regression_Study_Script.R")
+```
+
+### Running Python Scripts
+
+```bash
+python3 ~/DataStudy/Pystudy/Linear-Regression-Study-Project/linear_regression_study.py
+```
+
+Refer to the README files in each subdirectory for detailed documentation:
+- [Rstudy README](Rstudy/README.md)
+- [Pystudy README](Pystudy/README.md)
+
+---
+
+## License
+
+This project is open source and available under the MIT License.
